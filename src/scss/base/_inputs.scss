@@ -1,0 +1,17 @@
+@use '../base/variables' as v;
+
+#input-texto{
+    border-color: red;
+    height: 5rem;
+    width: 30rem;
+    font-size: 2rem;
+    font-family: v.$fuente_principal;
+}
+
+#boton-iniciar{
+    border-color: green;
+    height: 5rem;
+    width: 8rem;
+    font-family: v.$fuente_principal;
+    font-size: 2rem;
+}

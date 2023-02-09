@@ -1,0 +1,21 @@
+@use '../base/variables' as v;
+
+body{
+    background-color: v.$fondo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor{
+    border: 1px black solid;
+    padding: 10rem;
+    background-color: v.$azul_claro;
+
+    .palabra_contenedor{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}

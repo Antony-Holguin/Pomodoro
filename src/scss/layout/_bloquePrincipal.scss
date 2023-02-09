@@ -1,0 +1,16 @@
+@use '../base/variables' as v;
+
+
+
+.contenedor-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 3rem;
+    gap: 6rem;
+    
+}
+
+.input-texto{
+ text-align: center;
+}
