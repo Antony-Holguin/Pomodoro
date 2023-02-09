@@ -47,6 +47,25 @@ img {
   display: block;
 }
 
+#input-texto {
+  border-color: red;
+  height: 5rem;
+  width: 30rem;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+#boton-iniciar {
+  border-color: green;
+  height: 5rem;
+  width: 8rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+#boton-iniciar:hover {
+  cursor: pointer;
+}
+
 body {
   background-color: #aaa;
   display: flex;
@@ -56,6 +75,23 @@ body {
 
 .contenedor {
   border: 1px black solid;
-  padding: 20rem;
+  padding: 10rem;
   background-color: #42a5f5;
+}
+.contenedor .palabra_contenedor {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contenedor-input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 3rem;
+  gap: 6rem;
+}
+
+.input-texto {
+  text-align: center;
 }
