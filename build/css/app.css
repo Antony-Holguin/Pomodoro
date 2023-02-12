@@ -47,7 +47,7 @@ img {
   display: block;
 }
 
-#input-texto {
+#campo-texto {
   border-color: red;
   height: 5rem;
   width: 30rem;
@@ -63,6 +63,21 @@ img {
   font-size: 2rem;
 }
 #boton-iniciar:hover {
+  cursor: pointer;
+}
+
+.palabra_contenedor {
+  font-size: 12rem;
+}
+
+#boton-limpiar {
+  border-color: green;
+  height: 5rem;
+  width: 9rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+#boton-limpiar:hover {
   cursor: pointer;
 }
 
