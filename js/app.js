@@ -1,49 +1,36 @@
-document.addEventListener('DOMContentLoaded', iniciarApp);
-
-const tareas = [];
-const botonIniciar = document.querySelector('#iniciar').addEventListener('click', mostrarTarea);
-const botonLimpiar = document.getElementById('boton-limpiar').addEventListener('click', limpiarTexto);
-
-const input = document.getElementById('campo-texto');
-var hora = 0;
-var minuto = 25;
-var segundo = 0;
-var hms = document.querySelector('.palabra_contenedor').innerHTML=`00:${minuto}:${segundo}`;
-
-
+document.addEventListener("DOMContentLoaded",()=>{
+    iniciarApp();
+});
+//Declaraciond de variables
+const contenedor = document.querySelector('.contenedor');
 function iniciarApp(){
-    
+    crearContenedores();
 }
 
-function mostrarTarea(){
-    const tarea = document.getElementById('campo-texto').value;
-    tareas.unshift(tarea);
-    const contenedorPrincipal = document.querySelector('.contenedor');
-    const elemento = document.createElement('DIV');
-    elemento.classList.add('parafo');
-    elemento.innerHTML = `<p>${tarea}</p>`;
-    contenedorPrincipal.appendChild(elemento);
-    setInterval(()=>{
-        segundo++;
-        hms = document.querySelector('.palabra_contenedor').innerHTML=`00:${minuto}:${segundo}`;
-        console.log(minuto);
-        if(segundo==10){
-            segundo=0;
-            minuto++;
-        }
-        
-    },1000);
-        
+function crearContenedores(){
+    var contenedoruno = document.createElement('DIV');
+    contenedoruno.classList.add('bloqueRojo');
+    contenedor.appendChild(contenedoruno);
 
+    var contenedorDos = document.createElement('DIV');
+    contenedorDos.classList.add('bloqueNaranja');
 
-}
+    contenedor.appendChild(contenedorDos);
 
-function cronometro(){
+    var contenedorTres = document.createElement('DIV');
+    contenedorTres.classList.add('bloqueVerde');
+    contenedor.appendChild(contenedorTres);
+
+    var contenedorCuatro = document.createElement('DIV');
+    contenedorCuatro.classList.add('bloqueNegro');
+    contenedor.appendChild(contenedorCuatro);
+
+    anadirTexto();
 
 }
 
 
-
-function limpiarTexto(){
-    input.value = "";
+function anadirTexto(){
+    var textoContenedorUno = document.querySelector('.bloqueRojo');
+    textoContenedorUno.textContent = 'alvsksfkafasfasssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss';
 }

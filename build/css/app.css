@@ -47,56 +47,41 @@ img {
   display: block;
 }
 
-#campo-texto {
-  border-color: red;
-  height: 5rem;
-  width: 30rem;
-  font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
-}
-
-#boton-iniciar {
-  border-color: green;
-  height: 5rem;
-  width: 8rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-}
-#boton-iniciar:hover {
-  cursor: pointer;
-}
-
-.palabra_contenedor {
-  font-size: 12rem;
-}
-
-#boton-limpiar {
-  border-color: green;
-  height: 5rem;
-  width: 9rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-}
-#boton-limpiar:hover {
-  cursor: pointer;
-}
-
 body {
-  background-color: #aaa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: yellow;
 }
 
 .contenedor {
-  border: 1px black solid;
-  padding: 10rem;
-  background-color: #42a5f5;
+  display: flex;
+  border-radius: black 2px solid;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
 }
-.contenedor .palabra_contenedor {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+.bloqueRojo {
+  background-color: red;
+  height: 20rem;
+  width: 20rem;
+  overflow: auto;
+  position: fixed;
+}
+
+.bloqueNegro {
+  background-color: black;
+  height: 20rem;
+  width: 20rem;
+}
+
+.bloqueNaranja {
+  background-color: orange;
+  height: 20rem;
+  width: 20rem;
+}
+
+.bloqueVerde {
+  background-color: green;
+  height: 20rem;
+  width: 20rem;
 }
 
 .contenedor-input {
